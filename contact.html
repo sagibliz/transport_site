@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+		<?php include "includes/header1.html"; ?>
+	<body>
+		<?php include "includes/header2.html"; ?>
+		
+		<div class="main_contact_container">
+			<div class="contact_content">	
+				<h1>OUR <span> CONTACTS</span></h1>
+			</div>
+		</div>
+		<div class="main_contact">
+			<div class="content_container">
+				<div class="content1">
+					<i class="fa fa-map-marker" id="icon_contact"></i>
+					<h2>Location</h2>
+					<p>Container 3, Tincan Longroom, Tincan Island Apapa, Lagos Nigeria.</p>
+				</div>
+				<div class="content1">
+					<i class="fa fa-phone-square" id="icon_contact"></i>
+					<h2>Phones</h2>
+					<p>+234 701 733 1451</p>
+					<p>+234 913 329 8851</p>
+				</div>
+			</div>	
+			<div class="content_container">
+				<div class="content1">
+					<i class="fa fa-envelope-o" id="icon_contact"></i>
+					<h2>Emails</h2>
+					<p>swifttransportlogs@gmail.com</p>
+					<p>ubongnelson24@gmail.com</p>
+				</div>
+				
+				<div class="content1">
+					<i class="fa fa-clock-o" id="icon_contact"></i>
+					<h2>Working Hours</h2>
+					<p>Monday - Friday</p>
+					<p>8:00AM - 5:00PM</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="contact_form">
+			<div class="form_content">
+				<form action="validation.php" method="POST" class="form" onsubmit="return validate_input()">
+					<h2>Get in Touch</h2>
+					<div class="input_boxes">
+
+						<div class="fill_1">	
+							<label for="last_name"  class="info_details">First Name</label>
+							<input type="text" id="fname" name="">
+						</div>	
+						
+						<div class="fill_1">	
+							<label for="last_name"  class="info_details">Last Name</label>
+							<input type="text" id="lname" name="">
+						</div>	
+					</div>	
+					
+					<div class="input_boxes">
+					
+						<div class="fill_1">					
+							<label for="email"  class="info_details">Email</label>
+							<input type="text" id="email" name="">
+						</div>	
+						
+						<div class="fill_1">	
+							<label for="phone" class="info_details">Phone Number</label>
+							<input type="number" id="phone" name="">
+						</div>		
+					</div>	
+						
+						<textarea placeholder="Type your Message..."></textarea>
+						<input type="submit" name="" value="submit" class="submit_btn">
+				</div>
+			</form>
+			</div>
+		</div>	
+		
+		<?php include "includes/footer.php"; ?>
+		<script src="javascript/script.js"></script>	
+	</body>
+</html>
